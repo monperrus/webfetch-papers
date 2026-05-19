@@ -104,6 +104,18 @@ TESTS = [
     ("OpenReview",    "PDF",            "https://openreview.net/pdf?id=rJ4km2R5t7",
      "OpenReview PDF"),
 
+    # ── IEEE Xplore ──────────────────────────────────────────────────────────
+    ("IEEE Xplore",   "abstract page",  "https://ieeexplore.ieee.org/document/10845793/",
+     "IEEE Access 2025 open-access paper (DOI 10.1109/ACCESS.2025.3531662)"),
+    ("IEEE Xplore",   "PDF (stamp)",    "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10845793",
+     "Same IEEE Access 2025 paper — stamp PDF link"),
+
+    # ── ACM Digital Library ──────────────────────────────────────────────────
+    ("ACM DL",        "abstract page",  "https://dl.acm.org/doi/10.1145/1294261.1294281",
+     "Dynamo: Amazon's Highly Available Key-value Store (SOSP 2007)"),
+    ("ACM DL",        "PDF",            "https://dl.acm.org/doi/pdf/10.1145/1294261.1294281",
+     "Dynamo paper — ACM DL PDF link"),
+
     # ── Conference proceedings ───────────────────────────────────────────────
     ("ACL Anthology", "abstract page",  "https://aclanthology.org/2023.acl-long.1/",
      "ACL 2023 paper"),

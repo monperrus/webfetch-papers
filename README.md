@@ -4,7 +4,7 @@
 
 ✅ **Claude can read arXiv, Internet Archive, PubMed Central, PLOS ONE, ACL Anthology, NeurIPS.**
 
-❌ **HAL, DIVA Portal, OSF Preprints are systematically blocked. bioRxiv, medRxiv, and most publisher sites return errors.**
+❌ **IEEE, ACM, HAL, DIVA, OSF are systematically blocked. bioRxiv, medRxiv, and most publisher sites return errors.**
 
 For hosting papers intended to be read by AI agents, **Internet Archive (direct PDF link) and arXiv are the recommended targets**.
 
@@ -60,6 +60,10 @@ This has direct implications for researchers who want their work to reach the wi
 | **PeerJ** | article page | ❌ `ERROR` |
 | **OpenReview** | forum page | ❌ `ERROR` |
 | **OpenReview** | PDF | ❌ `ERROR` |
+| **IEEE Xplore** | abstract page | ❌ `ERROR` |
+| **IEEE Xplore** | PDF (stamp) | ❌ `ERROR` |
+| **ACM DL** | abstract page | ❌ `ERROR` |
+| **ACM DL** | PDF | ❌ `ERROR` |
 | **ACL Anthology** | abstract page | ⚠️ `ABSTRACT_ONLY` |
 | **ACL Anthology** | PDF | ✅ `FULL_TEXT` |
 | **NeurIPS** | Paper PDF | ✅ `FULL_TEXT` |
@@ -79,10 +83,10 @@ This has direct implications for researchers who want their work to reach the wi
 
 ## Summary counts
 
-- ✅ **FULL_TEXT**: 10 / 37
-- ⚠️ **ABSTRACT_ONLY**: 6 / 37
-- 🚫 **BLOCKED**: 4 / 37
-- ❌ **ERROR**: 17 / 37
+- ✅ **FULL_TEXT**: 10 / 41
+- ⚠️ **ABSTRACT_ONLY**: 6 / 41
+- 🚫 **BLOCKED**: 4 / 41
+- ❌ **ERROR**: 21 / 41
 
 ## Per-provider details
 
@@ -228,6 +232,22 @@ This has direct implications for researchers who want their work to reach the wi
 - **PDF**  
   `https://openreview.net/pdf?id=rJ4km2R5t7`  
   ❌ `ERROR` — I'll fetch that URL for you. ERROR
+
+### IEEE Xplore
+- **abstract page**  
+  `https://ieeexplore.ieee.org/document/10845793/`  
+  ❌ `ERROR` — IEEE Access 2025 open-access paper (DOI 10.1109/ACCESS.2025.3531662). ieeexplore.ieee.org blocks all automated fetches (HTTP 418) regardless of open-access status.
+- **PDF (stamp)**  
+  `https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10845793`  
+  ❌ `ERROR`
+
+### ACM DL
+- **abstract page**  
+  `https://dl.acm.org/doi/10.1145/1294261.1294281`  
+  ❌ `ERROR` — Dynamo: Amazon's Highly Available Key-value Store (SOSP 2007).
+- **PDF**  
+  `https://dl.acm.org/doi/pdf/10.1145/1294261.1294281`  
+  ❌ `ERROR`
 
 ### ACL Anthology
 - **abstract page**  
