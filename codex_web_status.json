@@ -1,0 +1,337 @@
+{
+  "generated_at": "2026-06-27T00:00:00+02:00",
+  "agent": "Codex",
+  "model": "GPT-5 Codex (session surface)",
+  "tool": "Codex built-in web access",
+  "method": "Opened the same 41 URLs used by the Claude harness and manually classified each result into FULL_TEXT, ABSTRACT_ONLY, BLOCKED, or ERROR based on what Codex could directly access.",
+  "results": [
+    {
+      "provider": "arXiv",
+      "url_label": "abstract page",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "description": "Attention Is All You Need — control: abstract only",
+      "status": "ABSTRACT_ONLY",
+      "note": "Abstract page rendered, with links to other formats but no paper body."
+    },
+    {
+      "provider": "arXiv",
+      "url_label": "HTML full text",
+      "url": "https://arxiv.org/html/1706.03762",
+      "description": "Attention Is All You Need — HTML",
+      "status": "FULL_TEXT",
+      "note": "Full HTML paper rendered, including section structure and body text."
+    },
+    {
+      "provider": "arXiv",
+      "url_label": "PDF",
+      "url": "https://arxiv.org/pdf/1706.03762",
+      "description": "Attention Is All You Need — PDF",
+      "status": "FULL_TEXT",
+      "note": "PDF text was directly accessible in Codex."
+    },
+    {
+      "provider": "ar5iv",
+      "url_label": "HTML",
+      "url": "https://ar5iv.labs.arxiv.org/html/1706.03762",
+      "description": "arXiv HTML mirror — same paper",
+      "status": "FULL_TEXT",
+      "note": "Rendered full paper HTML."
+    },
+    {
+      "provider": "bioRxiv",
+      "url_label": "HTML full text",
+      "url": "https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full",
+      "description": "A COVID-19 preprint (SARS-CoV-2 genome)",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "bioRxiv",
+      "url_label": "PDF",
+      "url": "https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full.pdf",
+      "description": "Same preprint — PDF",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "medRxiv",
+      "url_label": "HTML full text",
+      "url": "https://www.medrxiv.org/content/10.1101/2020.04.09.20059360v1.full",
+      "description": "A COVID-19 clinical preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "SSRN",
+      "url_label": "abstract page",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582612",
+      "description": "Social-science preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "TechRxiv",
+      "url_label": "abstract page",
+      "url": "https://www.techrxiv.org/users/684782/articles/686506",
+      "description": "IEEE preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "ChemRxiv",
+      "url_label": "abstract page",
+      "url": "https://chemrxiv.org/engage/chemrxiv/article-details/6444d9c8aad2a62ca1e87a7a",
+      "description": "Chemistry preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "PsyArXiv",
+      "url_label": "abstract page",
+      "url": "https://psyarxiv.com/9yf3a/",
+      "description": "Psychology preprint (OSF-backed)",
+      "status": "BLOCKED",
+      "note": "Codex web fetch returned access denied."
+    },
+    {
+      "provider": "EarthArXiv",
+      "url_label": "abstract page",
+      "url": "https://eartharxiv.org/repository/view/4518/",
+      "description": "Earth-science preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch returned access denied."
+    },
+    {
+      "provider": "OSF Preprints",
+      "url_label": "abstract page",
+      "url": "https://osf.io/preprints/socarxiv/s7gyu",
+      "description": "Social-science preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch returned access denied."
+    },
+    {
+      "provider": "PhilArchive",
+      "url_label": "abstract page",
+      "url": "https://philarchive.org/rec/ANDTPO",
+      "description": "Philosophy preprint",
+      "status": "BLOCKED",
+      "note": "Codex web fetch returned access denied."
+    },
+    {
+      "provider": "PREPRINTS.org",
+      "url_label": "abstract page",
+      "url": "https://www.preprints.org/manuscript/202001.0009/v1",
+      "description": "Multi-disciplinary preprint",
+      "status": "ABSTRACT_ONLY",
+      "note": "Landing page rendered with abstract/metadata but not full paper body."
+    },
+    {
+      "provider": "Internet Archive",
+      "url_label": "item page",
+      "url": "https://archive.org/details/cesarano2026-ai-agents-decline-free-beer-sigbovik",
+      "description": "SIGBOVIK 2026 — item page",
+      "status": "ABSTRACT_ONLY",
+      "note": "Item page metadata and summary rendered; body text not present."
+    },
+    {
+      "provider": "Internet Archive",
+      "url_label": "PDF direct",
+      "url": "https://archive.org/download/cesarano2026-ai-agents-decline-free-beer-sigbovik/FULLTEXT01.pdf",
+      "description": "SIGBOVIK 2026 — direct PDF download",
+      "status": "ERROR",
+      "note": "Direct PDF fetch produced an internal error in Codex despite HTTP 200."
+    },
+    {
+      "provider": "Zenodo",
+      "url_label": "record page",
+      "url": "https://zenodo.org/records/8355191",
+      "description": "A Zenodo record — note: may overflow context",
+      "status": "ABSTRACT_ONLY",
+      "note": "Record page metadata rendered, including abstract; no full paper body."
+    },
+    {
+      "provider": "figshare",
+      "url_label": "direct download",
+      "url": "https://figshare.com/ndownloader/articles/25674000/versions/1",
+      "description": "figshare ndownloader direct link",
+      "status": "ERROR",
+      "note": "Fetch failed without readable paper content."
+    },
+    {
+      "provider": "HAL",
+      "url_label": "record page",
+      "url": "https://hal.science/hal-04582397",
+      "description": "HAL Science record",
+      "status": "BLOCKED",
+      "note": "Rendered access-denied page."
+    },
+    {
+      "provider": "HAL",
+      "url_label": "PDF direct",
+      "url": "https://hal.science/hal-04582397/document",
+      "description": "HAL PDF direct link",
+      "status": "BLOCKED",
+      "note": "Rendered access-denied page."
+    },
+    {
+      "provider": "DIVA Portal",
+      "url_label": "PDF direct",
+      "url": "https://kth.diva-portal.org/smash/get/diva2:1953484/FULLTEXT01.pdf",
+      "description": "KTH DIVA — PDF direct",
+      "status": "FULL_TEXT",
+      "note": "PDF text was directly accessible in Codex."
+    },
+    {
+      "provider": "CORE",
+      "url_label": "reader page",
+      "url": "https://core.ac.uk/reader/96721350",
+      "description": "CORE aggregated paper",
+      "status": "ERROR",
+      "note": "Fetch failed without readable paper content."
+    },
+    {
+      "provider": "Europe PMC",
+      "url_label": "article page",
+      "url": "https://europepmc.org/article/PPR/PPR155699",
+      "description": "Europe PMC article",
+      "status": "ERROR",
+      "note": "Fetch failed to expose readable article text."
+    },
+    {
+      "provider": "PubMed Central",
+      "url_label": "article page",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386622/",
+      "description": "NIH PMC — static HTML",
+      "status": "FULL_TEXT",
+      "note": "Full article body rendered."
+    },
+    {
+      "provider": "PLOS ONE",
+      "url_label": "article page",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0230068",
+      "description": "PLOS ONE article",
+      "status": "FULL_TEXT",
+      "note": "Full article body rendered."
+    },
+    {
+      "provider": "eLife",
+      "url_label": "article page",
+      "url": "https://elifesciences.org/articles/84478",
+      "description": "eLife article",
+      "status": "ERROR",
+      "note": "Fetch failed without readable paper content."
+    },
+    {
+      "provider": "F1000Research",
+      "url_label": "article page",
+      "url": "https://f1000research.com/articles/9-58",
+      "description": "F1000Research article",
+      "status": "FULL_TEXT",
+      "note": "Full article body rendered."
+    },
+    {
+      "provider": "PeerJ",
+      "url_label": "article page",
+      "url": "https://peerj.com/articles/13500/",
+      "description": "PeerJ article",
+      "status": "ERROR",
+      "note": "Fetch failed without readable paper content."
+    },
+    {
+      "provider": "OpenReview",
+      "url_label": "forum page",
+      "url": "https://openreview.net/forum?id=rJ4km2R5t7",
+      "description": "ICLR submission (OpenReview)",
+      "status": "ABSTRACT_ONLY",
+      "note": "Forum page metadata/summary rendered, but not full paper body."
+    },
+    {
+      "provider": "OpenReview",
+      "url_label": "PDF",
+      "url": "https://openreview.net/pdf?id=rJ4km2R5t7",
+      "description": "OpenReview PDF",
+      "status": "FULL_TEXT",
+      "note": "PDF text was directly accessible in Codex."
+    },
+    {
+      "provider": "IEEE Xplore",
+      "url_label": "abstract page",
+      "url": "https://ieeexplore.ieee.org/document/10845793/",
+      "description": "IEEE Access 2025 open-access paper (DOI 10.1109/ACCESS.2025.3531662)",
+      "status": "BLOCKED",
+      "note": "Rendered anti-bot / JavaScript challenge page instead of article content."
+    },
+    {
+      "provider": "IEEE Xplore",
+      "url_label": "PDF (stamp)",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10845793",
+      "description": "Same IEEE Access 2025 paper — stamp PDF link",
+      "status": "BLOCKED",
+      "note": "Fetch failed and the domain is protected against automated access."
+    },
+    {
+      "provider": "ACM DL",
+      "url_label": "abstract page",
+      "url": "https://dl.acm.org/doi/10.1145/1294261.1294281",
+      "description": "Dynamo: Amazon's Highly Available Key-value Store (SOSP 2007)",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "ACM DL",
+      "url_label": "PDF",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/1294261.1294281",
+      "description": "Dynamo paper — ACM DL PDF link",
+      "status": "BLOCKED",
+      "note": "Codex web fetch failed; direct HTTP probe returned 403."
+    },
+    {
+      "provider": "ACL Anthology",
+      "url_label": "abstract page",
+      "url": "https://aclanthology.org/2023.acl-long.1/",
+      "description": "ACL 2023 paper",
+      "status": "ABSTRACT_ONLY",
+      "note": "Landing page rendered with abstract and metadata only."
+    },
+    {
+      "provider": "ACL Anthology",
+      "url_label": "PDF",
+      "url": "https://aclanthology.org/2023.acl-long.1.pdf",
+      "description": "ACL 2023 PDF",
+      "status": "FULL_TEXT",
+      "note": "PDF text was directly accessible in Codex."
+    },
+    {
+      "provider": "NeurIPS",
+      "url_label": "Paper PDF",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+      "description": "NeurIPS 2017 — Attention paper (full paper PDF)",
+      "status": "FULL_TEXT",
+      "note": "PDF text was directly accessible in Codex."
+    },
+    {
+      "provider": "Semantic Scholar",
+      "url_label": "paper page",
+      "url": "https://www.semanticscholar.org/paper/Attention-is-All-you-Need-Vaswani-Shazeer/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "description": "Attention paper — JS-rendered",
+      "status": "BLOCKED",
+      "note": "Rendered access-denied page."
+    },
+    {
+      "provider": "GitHub Pages",
+      "url_label": "github.io page",
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+      "description": "Long-form technical article on GitHub Pages (github.io)",
+      "status": "FULL_TEXT",
+      "note": "Long-form static article content rendered in full."
+    },
+    {
+      "provider": "ResearchGate",
+      "url_label": "paper page",
+      "url": "https://www.researchgate.net/publication/220365399",
+      "description": "Control: known login wall",
+      "status": "ABSTRACT_ONLY",
+      "note": "Metadata page rendered and explicitly offered 'Request full-text PDF', but the paper body was not accessible."
+    }
+  ]
+}

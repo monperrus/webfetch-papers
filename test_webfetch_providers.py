@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Test web_fetch support across major open-science / preprint providers.
+Claude-specific harness for testing paper accessibility across major
+open-science / preprint providers.
 
 Status codes:
   FULL_TEXT      – paper body retrieved; first conclusion sentence returned
@@ -25,7 +26,7 @@ OUT_DIR = Path(__file__).parent
 
 FETCH_TOOL = {"type": "web_fetch_20260209", "name": "web_fetch", "allowed_callers": ["direct"]}
 
-# ── Test matrix ───────────────────────────────────────────────────────────────
+# ── Test matrix shared by all agent reports ──────────────────────────────────
 # (provider, url_label, url, description)
 TESTS = [
     # ── arXiv ────────────────────────────────────────────────────────────────
