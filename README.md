@@ -86,6 +86,21 @@ Interpretation:
 - `HAL`, `IEEE Xplore`, `ACM DL`
 - `OSF`-backed and JS/anti-bot-heavy properties such as `PsyArXiv`, `Semantic Scholar`
 
+## Contacted Platforms
+
+The following platforms were contacted about AI-agent accessibility:
+
+| Platform | Contact email |
+|----------|---------------|
+| bioRxiv / medRxiv | `biorxiv@openrxiv.org` |
+| SSRN | `support@ssrn.com` |
+| TechRxiv | `help@techrxiv.org` |
+| ChemRxiv | `support@chemrxiv.org` |
+| OSF Preprints | `support@osf.io` |
+| HAL | `hal.support@ccsd.cnrs.fr` |
+| IEEE Xplore | `onlinesupport@ieee.org` |
+| ACM DL | `dl-team@hq.acm.org` |
+
 ## Per-URL Comparison
 
 | Provider | URL type | Claude | Codex |
