@@ -148,6 +148,14 @@
       "snippet": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'prompt is too long: 203400 tokens > 200000 maximum'}, 'request_id': 'req_011CbBHsVXX8woPkiVj474Ut'}"
     },
     {
+      "provider": "Zenodo",
+      "url_label": "record page 2",
+      "url": "https://zenodo.org/records/20738982",
+      "description": "Registry, Compiler, and Cloud Memory preprint — second Zenodo record",
+      "status": "ABSTRACT_ONLY",
+      "snippet": "The webpage displays the Zenodo record page with the abstract, metadata, and file information for the preprint \"Registry, Compiler, and Cloud Memory: Toward a New Generation of Agent Architecture Centered on an Agent Operating System.\" While a PDF file is listed (1.5 MB), the actual full paper body text is not rendered on this page—only the abstract, keywords, and bibliographic details are visible."
+    },
+    {
       "provider": "figshare",
       "url_label": "direct download",
       "url": "https://figshare.com/ndownloader/articles/25674000/versions/1",

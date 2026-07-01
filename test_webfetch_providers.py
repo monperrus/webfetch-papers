@@ -76,6 +76,8 @@ TESTS = [
      "SIGBOVIK 2026 — direct PDF download"),
     ("Zenodo",        "record page",    "https://zenodo.org/records/8355191",
      "A Zenodo record — note: may overflow context"),
+    ("Zenodo",        "record page 2",  "https://zenodo.org/records/20738982",
+     "Registry, Compiler, and Cloud Memory preprint — second Zenodo record"),
     ("figshare",      "direct download","https://figshare.com/ndownloader/articles/25674000/versions/1",
      "figshare ndownloader direct link"),
     ("HAL",           "record page",    "https://hal.science/hal-04582397",
