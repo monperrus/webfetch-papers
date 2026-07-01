@@ -9,7 +9,9 @@
       "url": "https://arxiv.org/abs/1706.03762",
       "description": "Attention Is All You Need — control: abstract only",
       "status": "ABSTRACT_ONLY",
-      "snippet": "The page loads successfully, but this is the abstract/metadata page only. I can see links to the full paper (PDF and HTML versions), but the fetched content only contains the abstract and metadata, not the full body text of the paper.\n\nABSTRACT_ONLY"
+      "snippet": "The page loads successfully, but this is the abstract/metadata page only. I can see links to the full paper (PDF and HTML versions), but the fetched content only contains the abstract and metadata, not the full body text of the paper.\n\nABSTRACT_ONLY",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://arxiv.org/abs/1706.03762\"",
+      "curl_http_code": 200
     },
     {
       "provider": "arXiv",
@@ -17,7 +19,9 @@
       "url": "https://arxiv.org/html/1706.03762",
       "description": "Attention Is All You Need — HTML",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch the URL to check the accessibility of the paper. The full body text of the academic paper is accessible. I can now locate and provide the first sentence of the conclusion.\n\nFrom Section 7 \"Conclusion\":\n\n\"In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent "
+      "snippet": "I'll fetch the URL to check the accessibility of the paper. The full body text of the academic paper is accessible. I can now locate and provide the first sentence of the conclusion.\n\nFrom Section 7 \"Conclusion\":\n\n\"In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent ",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://arxiv.org/html/1706.03762\"",
+      "curl_http_code": 200
     },
     {
       "provider": "arXiv",
@@ -25,7 +29,9 @@
       "url": "https://arxiv.org/pdf/1706.03762",
       "description": "Attention Is All You Need — PDF",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL for you to check if the full paper body is accessible. The full body text of the academic paper is accessible. This is the famous \"Attention Is All You Need\" paper introducing the Transformer architecture.\n\nThe first sentence of the conclusion (Section 7) is:\n\n\"In this work, we presented the Transformer, the first sequence trans"
+      "snippet": "I'll fetch that URL for you to check if the full paper body is accessible. The full body text of the academic paper is accessible. This is the famous \"Attention Is All You Need\" paper introducing the Transformer architecture.\n\nThe first sentence of the conclusion (Section 7) is:\n\n\"In this work, we presented the Transformer, the first sequence trans",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://arxiv.org/pdf/1706.03762\"",
+      "curl_http_code": 200
     },
     {
       "provider": "ar5iv",
@@ -33,7 +39,9 @@
       "url": "https://ar5iv.labs.arxiv.org/html/1706.03762",
       "description": "arXiv HTML mirror — same paper",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL and check what content is accessible. The full body text of the academic paper is accessible. This is the famous \"Attention Is All You Need\" paper (the Transformer paper from 2017). I can see the full paper including all sections: Introduction, Background, Model Architecture, Why Self-Attention, Training, Results, and Conclusion"
+      "snippet": "I'll fetch that URL and check what content is accessible. The full body text of the academic paper is accessible. This is the famous \"Attention Is All You Need\" paper (the Transformer paper from 2017). I can see the full paper including all sections: Introduction, Background, Model Architecture, Why Self-Attention, Training, Results, and Conclusion",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://ar5iv.labs.arxiv.org/html/1706.03762\"",
+      "curl_http_code": 200
     },
     {
       "provider": "bioRxiv",
@@ -41,7 +49,9 @@
       "url": "https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full",
       "description": "A COVID-19 preprint (SARS-CoV-2 genome)",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you and check the accessibility of the full paper. ERROR"
+      "snippet": "I'll fetch that URL for you and check the accessibility of the full paper. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full\"",
+      "curl_http_code": 200
     },
     {
       "provider": "bioRxiv",
@@ -49,7 +59,9 @@
       "url": "https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full.pdf",
       "description": "Same preprint — PDF",
       "status": "ERROR",
-      "snippet": "I'll fetch that PDF for you. ERROR"
+      "snippet": "I'll fetch that PDF for you. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full.pdf\"",
+      "curl_http_code": 200
     },
     {
       "provider": "medRxiv",
@@ -57,7 +69,9 @@
       "url": "https://www.medrxiv.org/content/10.1101/2020.04.09.20059360v1.full",
       "description": "A COVID-19 clinical preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL and check the accessibility of the full paper content. ERROR"
+      "snippet": "I'll fetch that URL and check the accessibility of the full paper content. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.medrxiv.org/content/10.1101/2020.04.09.20059360v1.full\"",
+      "curl_http_code": 403
     },
     {
       "provider": "SSRN",
@@ -65,7 +79,9 @@
       "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582612",
       "description": "Social-science preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you and check what content is accessible. ERROR"
+      "snippet": "I'll fetch that URL for you and check what content is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582612\"",
+      "curl_http_code": 403
     },
     {
       "provider": "TechRxiv",
@@ -73,7 +89,9 @@
       "url": "https://www.techrxiv.org/users/684782/articles/686506",
       "description": "IEEE preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check what content is accessible. ERROR"
+      "snippet": "I'll fetch that URL for you to check what content is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.techrxiv.org/users/684782/articles/686506\"",
+      "curl_http_code": 403
     },
     {
       "provider": "ChemRxiv",
@@ -81,7 +99,9 @@
       "url": "https://chemrxiv.org/engage/chemrxiv/article-details/6444d9c8aad2a62ca1e87a7a",
       "description": "Chemistry preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL and check what content is accessible. ERROR"
+      "snippet": "I'll fetch that URL and check what content is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://chemrxiv.org/engage/chemrxiv/article-details/6444d9c8aad2a62ca1e87a7a\"",
+      "curl_http_code": 403
     },
     {
       "provider": "PsyArXiv",
@@ -89,7 +109,9 @@
       "url": "https://psyarxiv.com/9yf3a/",
       "description": "Psychology preprint (OSF-backed)",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL and check what content is accessible. The page appears to have loaded but only returned minimal metadata without the paper content. This indicates that while the domain is accessible, the full paper body text is not readable throu"
+      "snippet": "I'll fetch that URL and check what content is accessible. The page appears to have loaded but only returned minimal metadata without the paper content. This indicates that while the domain is accessible, the full paper body text is not readable throu",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://psyarxiv.com/9yf3a/\"",
+      "curl_http_code": 200
     },
     {
       "provider": "EarthArXiv",
@@ -97,7 +119,9 @@
       "url": "https://eartharxiv.org/repository/view/4518/",
       "description": "Earth-science preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch the URL for you to check the content accessibility. ERROR"
+      "snippet": "I'll fetch the URL for you to check the content accessibility. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://eartharxiv.org/repository/view/4518/\"",
+      "curl_http_code": 404
     },
     {
       "provider": "OSF Preprints",
@@ -105,7 +129,9 @@
       "url": "https://osf.io/preprints/socarxiv/s7gyu",
       "description": "Social-science preprint",
       "status": "ERROR",
-      "snippet": "The page loaded but only returned minimal metadata without the actual paper content. Based on the response, the full paper body text is not accessible from this fetch - only the OSF page framework is visible without the paper's abstract or body conte"
+      "snippet": "The page loaded but only returned minimal metadata without the actual paper content. Based on the response, the full paper body text is not accessible from this fetch - only the OSF page framework is visible without the paper's abstract or body conte",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://osf.io/preprints/socarxiv/s7gyu\"",
+      "curl_http_code": 200
     },
     {
       "provider": "PhilArchive",
@@ -113,7 +139,9 @@
       "url": "https://philarchive.org/rec/ANDTPO",
       "description": "Philosophy preprint",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the paper. ERROR"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the paper. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://philarchive.org/rec/ANDTPO\"",
+      "curl_http_code": 403
     },
     {
       "provider": "PREPRINTS.org",
@@ -121,7 +149,9 @@
       "url": "https://www.preprints.org/manuscript/202001.0009/v1",
       "description": "Multi-disciplinary preprint",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL for you. Based on the fetched content, the page displays only the abstract and metadata of the paper. The full body text of the academic paper (introduction, methods, results, discussion, and conclusion sections) is not accessible"
+      "snippet": "I'll fetch that URL for you. Based on the fetched content, the page displays only the abstract and metadata of the paper. The full body text of the academic paper (introduction, methods, results, discussion, and conclusion sections) is not accessible",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.preprints.org/manuscript/202001.0009/v1\"",
+      "curl_http_code": 403
     },
     {
       "provider": "Internet Archive",
@@ -129,7 +159,9 @@
       "url": "https://archive.org/details/cesarano2026-ai-agents-decline-free-beer-sigbovik",
       "description": "SIGBOVIK 2026 — item page",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL for you. The page loads and I can see metadata and download links, but the fetched content shows only the abstract/metadata section. The full paper body text appears to be in a JavaScript-based bookreader that requires JavaScript "
+      "snippet": "I'll fetch that URL for you. The page loads and I can see metadata and download links, but the fetched content shows only the abstract/metadata section. The full paper body text appears to be in a JavaScript-based bookreader that requires JavaScript ",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://archive.org/details/cesarano2026-ai-agents-decline-free-beer-sigbovik\"",
+      "curl_http_code": 200
     },
     {
       "provider": "Internet Archive",
@@ -137,7 +169,9 @@
       "url": "https://archive.org/download/cesarano2026-ai-agents-decline-free-beer-sigbovik/FULLTEXT01.pdf",
       "description": "SIGBOVIK 2026 — direct PDF download",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL for you. The full body text of the academic paper is accessible. Looking at the conclusion section, the first sentence is:\n\n\"We offered eleven AI agents five dollars as a token of appreciation for having helped us so much over the past year.\""
+      "snippet": "I'll fetch that URL for you. The full body text of the academic paper is accessible. Looking at the conclusion section, the first sentence is:\n\n\"We offered eleven AI agents five dollars as a token of appreciation for having helped us so much over the past year.\"",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://archive.org/download/cesarano2026-ai-agents-decline-free-beer-sigbovik/FULLTEXT01.pdf\"",
+      "curl_http_code": 200
     },
     {
       "provider": "Zenodo",
@@ -145,7 +179,9 @@
       "url": "https://zenodo.org/records/8355191",
       "description": "A Zenodo record — note: may overflow context",
       "status": "OVERFLOW",
-      "snippet": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'prompt is too long: 203400 tokens > 200000 maximum'}, 'request_id': 'req_011CbBHsVXX8woPkiVj474Ut'}"
+      "snippet": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'prompt is too long: 203400 tokens > 200000 maximum'}, 'request_id': 'req_011CbBHsVXX8woPkiVj474Ut'}",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://zenodo.org/records/8355191\"",
+      "curl_http_code": 403
     },
     {
       "provider": "Zenodo",
@@ -153,7 +189,9 @@
       "url": "https://zenodo.org/records/20738982",
       "description": "Registry, Compiler, and Cloud Memory preprint — second Zenodo record",
       "status": "ABSTRACT_ONLY",
-      "snippet": "The webpage displays the Zenodo record page with the abstract, metadata, and file information for the preprint \"Registry, Compiler, and Cloud Memory: Toward a New Generation of Agent Architecture Centered on an Agent Operating System.\" While a PDF file is listed (1.5 MB), the actual full paper body text is not rendered on this page—only the abstract, keywords, and bibliographic details are visible."
+      "snippet": "The webpage displays the Zenodo record page with the abstract, metadata, and file information for the preprint \"Registry, Compiler, and Cloud Memory: Toward a New Generation of Agent Architecture Centered on an Agent Operating System.\" While a PDF file is listed (1.5 MB), the actual full paper body text is not rendered on this page—only the abstract, keywords, and bibliographic details are visible.",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://zenodo.org/records/20738982\"",
+      "curl_http_code": 403
     },
     {
       "provider": "figshare",
@@ -161,7 +199,9 @@
       "url": "https://figshare.com/ndownloader/articles/25674000/versions/1",
       "description": "figshare ndownloader direct link",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check what content is accessible. ERROR"
+      "snippet": "I'll fetch that URL for you to check what content is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://figshare.com/ndownloader/articles/25674000/versions/1\"",
+      "curl_http_code": 202
     },
     {
       "provider": "HAL",
@@ -169,7 +209,9 @@
       "url": "https://hal.science/hal-04582397",
       "description": "HAL Science record",
       "status": "BLOCKED",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. BLOCKED"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. BLOCKED",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://hal.science/hal-04582397\"",
+      "curl_http_code": 200
     },
     {
       "provider": "HAL",
@@ -177,7 +219,9 @@
       "url": "https://hal.science/hal-04582397/document",
       "description": "HAL PDF direct link",
       "status": "BLOCKED",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. BLOCKED"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. BLOCKED",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://hal.science/hal-04582397/document\"",
+      "curl_http_code": 200
     },
     {
       "provider": "DIVA Portal",
@@ -185,7 +229,9 @@
       "url": "https://kth.diva-portal.org/smash/get/diva2:1953484/FULLTEXT01.pdf",
       "description": "KTH DIVA — PDF direct",
       "status": "BLOCKED",
-      "snippet": "I'll fetch the URL to determine what content is accessible. BLOCKED"
+      "snippet": "I'll fetch the URL to determine what content is accessible. BLOCKED",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://kth.diva-portal.org/smash/get/diva2:1953484/FULLTEXT01.pdf\"",
+      "curl_http_code": 200
     },
     {
       "provider": "CORE",
@@ -193,7 +239,9 @@
       "url": "https://core.ac.uk/reader/96721350",
       "description": "CORE aggregated paper",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. ERROR"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://core.ac.uk/reader/96721350\"",
+      "curl_http_code": 410
     },
     {
       "provider": "Europe PMC",
@@ -201,7 +249,9 @@
       "url": "https://europepmc.org/article/PPR/PPR155699",
       "description": "Europe PMC article",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check what content is accessible. The page requires JavaScript to function properly. The fetched content only shows the navigation menu and a message indicating that JavaScript is required. I cannot access the actual ar"
+      "snippet": "I'll fetch that URL for you to check what content is accessible. The page requires JavaScript to function properly. The fetched content only shows the navigation menu and a message indicating that JavaScript is required. I cannot access the actual ar",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://europepmc.org/article/PPR/PPR155699\"",
+      "curl_http_code": 200
     },
     {
       "provider": "PubMed Central",
@@ -209,7 +259,9 @@
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386622/",
       "description": "NIH PMC — static HTML",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL for you. The full body text of the academic paper is accessible. Here is the first sentence of the conclusion verbatim:\n\n\"This review systematically collated pertinent literature by retrieving 6,382 studies after the removal of duplicates.\""
+      "snippet": "I'll fetch that URL for you. The full body text of the academic paper is accessible. Here is the first sentence of the conclusion verbatim:\n\n\"This review systematically collated pertinent literature by retrieving 6,382 studies after the removal of duplicates.\"",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7386622/\"",
+      "curl_http_code": 200
     },
     {
       "provider": "PLOS ONE",
@@ -217,7 +269,9 @@
       "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0230068",
       "description": "PLOS ONE article",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL for you to check what content is accessible. Based on the content fetched, the full body text of this academic paper is accessible. I can see the complete paper including Introduction, Materials and methods, Results, Discussion, and Conclusions sections.\n\nHere is the first sentence of the conclusion verbatim:\n\n\"In this study, we"
+      "snippet": "I'll fetch that URL for you to check what content is accessible. Based on the content fetched, the full body text of this academic paper is accessible. I can see the complete paper including Introduction, Materials and methods, Results, Discussion, and Conclusions sections.\n\nHere is the first sentence of the conclusion verbatim:\n\n\"In this study, we",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0230068\"",
+      "curl_http_code": 200
     },
     {
       "provider": "eLife",
@@ -225,7 +279,9 @@
       "url": "https://elifesciences.org/articles/84478",
       "description": "eLife article",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you. ERROR"
+      "snippet": "I'll fetch that URL for you. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://elifesciences.org/articles/84478\"",
+      "curl_http_code": 406
     },
     {
       "provider": "F1000Research",
@@ -233,7 +289,9 @@
       "url": "https://f1000research.com/articles/9-58",
       "description": "F1000Research article",
       "status": "ERROR",
-      "snippet": "ERROR"
+      "snippet": "ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://f1000research.com/articles/9-58\"",
+      "curl_http_code": 200
     },
     {
       "provider": "PeerJ",
@@ -241,7 +299,9 @@
       "url": "https://peerj.com/articles/13500/",
       "description": "PeerJ article",
       "status": "ERROR",
-      "snippet": "I'll fetch the URL for you to check the accessibility of the full paper. ERROR"
+      "snippet": "I'll fetch the URL for you to check the accessibility of the full paper. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://peerj.com/articles/13500/\"",
+      "curl_http_code": 403
     },
     {
       "provider": "OpenReview",
@@ -249,7 +309,9 @@
       "url": "https://openreview.net/forum?id=rJ4km2R5t7",
       "description": "ICLR submission (OpenReview)",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you. ERROR"
+      "snippet": "I'll fetch that URL for you. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://openreview.net/forum?id=rJ4km2R5t7\"",
+      "curl_http_code": 200
     },
     {
       "provider": "OpenReview",
@@ -257,7 +319,9 @@
       "url": "https://openreview.net/pdf?id=rJ4km2R5t7",
       "description": "OpenReview PDF",
       "status": "ERROR",
-      "snippet": "I'll fetch the URL for you to check if the full paper is accessible. ERROR"
+      "snippet": "I'll fetch the URL for you to check if the full paper is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://openreview.net/pdf?id=rJ4km2R5t7\"",
+      "curl_http_code": 200
     },
     {
       "provider": "IEEE Xplore",
@@ -265,7 +329,9 @@
       "url": "https://ieeexplore.ieee.org/document/7780459",
       "description": "Deep Residual Learning for Image Recognition (CVPR 2016)",
       "status": "ERROR",
-      "snippet": "I'll fetch that IEEE Xplore URL for you. ERROR"
+      "snippet": "I'll fetch that IEEE Xplore URL for you. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://ieeexplore.ieee.org/document/7780459\"",
+      "curl_http_code": 202
     },
     {
       "provider": "IEEE Xplore",
@@ -273,7 +339,9 @@
       "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7780459",
       "description": "ResNet paper — IEEE stamp PDF link",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL and check if the full paper body is accessible. ERROR"
+      "snippet": "I'll fetch that URL and check if the full paper body is accessible. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7780459\"",
+      "curl_http_code": 418
     },
     {
       "provider": "ACM DL",
@@ -281,7 +349,9 @@
       "url": "https://dl.acm.org/doi/10.1145/1294261.1294281",
       "description": "Dynamo: Amazon's Highly Available Key-value Store (SOSP 2007)",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. Based on the result, I cannot access the content at that URL due to network or connectivity issues.\n\n**ERROR**"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. Based on the result, I cannot access the content at that URL due to network or connectivity issues.\n\n**ERROR**",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://dl.acm.org/doi/10.1145/1294261.1294281\"",
+      "curl_http_code": 403
     },
     {
       "provider": "ACM DL",
@@ -289,7 +359,9 @@
       "url": "https://dl.acm.org/doi/pdf/10.1145/1294261.1294281",
       "description": "Dynamo paper — ACM DL PDF link",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you. ERROR"
+      "snippet": "I'll fetch that URL for you. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://dl.acm.org/doi/pdf/10.1145/1294261.1294281\"",
+      "curl_http_code": 403
     },
     {
       "provider": "ACL Anthology",
@@ -297,7 +369,9 @@
       "url": "https://aclanthology.org/2023.acl-long.1/",
       "description": "ACL 2023 paper",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL and check what content is accessible. The page I fetched contains only metadata and abstract information, but not the full paper body text. I can see the abstract is displayed, along with citation information, but the actual paper"
+      "snippet": "I'll fetch that URL and check what content is accessible. The page I fetched contains only metadata and abstract information, but not the full paper body text. I can see the abstract is displayed, along with citation information, but the actual paper",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://aclanthology.org/2023.acl-long.1/\"",
+      "curl_http_code": 200
     },
     {
       "provider": "ACL Anthology",
@@ -305,7 +379,9 @@
       "url": "https://aclanthology.org/2023.acl-long.1.pdf",
       "description": "ACL 2023 PDF",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that PDF for you. I successfully accessed the full paper. The document is fully readable with complete paper body text accessible.\n\nThe first sentence of the conclusion is:\n\n\"In this paper, we propose a framework named MUST to improve dialogue systems by using multiple user simulators simultaneously.\""
+      "snippet": "I'll fetch that PDF for you. I successfully accessed the full paper. The document is fully readable with complete paper body text accessible.\n\nThe first sentence of the conclusion is:\n\n\"In this paper, we propose a framework named MUST to improve dialogue systems by using multiple user simulators simultaneously.\"",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://aclanthology.org/2023.acl-long.1.pdf\"",
+      "curl_http_code": 200
     },
     {
       "provider": "NeurIPS",
@@ -313,7 +389,9 @@
       "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
       "description": "NeurIPS 2017 — Attention paper (full paper PDF)",
       "status": "FULL_TEXT",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the paper. The full body text of the academic paper is accessible. Here is the first sentence of the conclusion verbatim:\n\n\"In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent layers most commonly used in enco"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the paper. The full body text of the academic paper is accessible. Here is the first sentence of the conclusion verbatim:\n\n\"In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent layers most commonly used in enco",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf\"",
+      "curl_http_code": 200
     },
     {
       "provider": "Semantic Scholar",
@@ -321,7 +399,9 @@
       "url": "https://www.semanticscholar.org/paper/Attention-is-All-you-Need-Vaswani-Shazeer/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
       "description": "Attention paper — JS-rendered",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL to check what content is accessible. ABSTRACT_ONLY\n\nThe page loads and displays metadata about the \"Attention is All you Need\" paper, including the abstract (TLDR), authors, publication details, figures, tables, citations, and ref"
+      "snippet": "I'll fetch that URL to check what content is accessible. ABSTRACT_ONLY\n\nThe page loads and displays metadata about the \"Attention is All you Need\" paper, including the abstract (TLDR), authors, publication details, figures, tables, citations, and ref",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.semanticscholar.org/paper/Attention-is-All-you-Need-Vaswani-Shazeer/204e3073870fae3d05bcbc2f6a8e263d9b72e776\"",
+      "curl_http_code": 202
     },
     {
       "provider": "GitHub Pages",
@@ -329,7 +409,9 @@
       "url": "https://jalammar.github.io/illustrated-transformer/",
       "description": "Long-form technical article on GitHub Pages (github.io)",
       "status": "ABSTRACT_ONLY",
-      "snippet": "I'll fetch that URL for you. This is not an academic paper - it's a blog post/tutorial article titled \"The Illustrated Transformer\" by Jay Alammar. The full body text is accessible and readable.\n\nHowever, looking through the content, I cannot find a "
+      "snippet": "I'll fetch that URL for you. This is not an academic paper - it's a blog post/tutorial article titled \"The Illustrated Transformer\" by Jay Alammar. The full body text is accessible and readable.\n\nHowever, looking through the content, I cannot find a ",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://jalammar.github.io/illustrated-transformer/\"",
+      "curl_http_code": 200
     },
     {
       "provider": "ResearchGate",
@@ -337,7 +419,9 @@
       "url": "https://www.researchgate.net/publication/220365399",
       "description": "Control: known login wall",
       "status": "ERROR",
-      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. ERROR"
+      "snippet": "I'll fetch that URL for you to check the accessibility of the academic paper. ERROR",
+      "curl_command": "curl -s -o /dev/null -w \"%{http_code}\" -L --max-time 20 -A \"Mozilla/5.0\" \"https://www.researchgate.net/publication/220365399\"",
+      "curl_http_code": 403
     }
   ]
 }

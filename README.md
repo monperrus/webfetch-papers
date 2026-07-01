@@ -62,6 +62,33 @@ Interpretation:
 - **Codex** exposes hard access restrictions more clearly as `BLOCKED`.
 - Both agents agree on the most robust hosts: `arXiv`, `PMC`, `PLOS ONE`, `ACL PDF`, `NeurIPS PDF`.
 
+## HTTP Response Codes vs Agent Status (Claude)
+
+A naive `curl -L` request reveals how each server responds to a plain HTTP client before any agent-specific logic applies.
+
+```
+curl -s -o /dev/null -w "%{http_code}" -L --max-time 20 -A "Mozilla/5.0" "<url>"
+```
+
+Stats script: [`curl_http_stats.py`](curl_http_stats.py) — reads `webfetch_preprint_status.json` and cross-tabulates HTTP code against agent-observed status.
+
+| HTTP code | URLs | FULL_TEXT | ABSTRACT_ONLY | OVERFLOW | BLOCKED | ERROR |
+|----------:|-----:|----------:|--------------:|---------:|--------:|------:|
+| 200 | 23 | 8 | 5 | 0 | 3 | 7 |
+| 202 | 3 | 0 | 1 | 0 | 0 | 2 |
+| 403 | 12 | 0 | 2 | 1 | 0 | 9 |
+| 404 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 406 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 410 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 418 | 1 | 0 | 0 | 0 | 0 | 1 |
+
+Key observations:
+
+- **HTTP 200 does not guarantee agent readability.** 10 of 23 HTTP-200 URLs still produced `ERROR` or `BLOCKED` for Claude — bioRxiv, OSF, HAL, DIVA, Europe PMC, F1000Research, and OpenReview all serve 200 to curl yet block or break the agent fetch (JS-only rendering, session checks, or CDN-level fingerprinting).
+- **HTTP 403 does not always stop the agent.** 3 of 12 HTTP-403 URLs still yielded content: Zenodo (both records, `ABSTRACT_ONLY` and `OVERFLOW`) and PREPRINTS.org (`ABSTRACT_ONLY`). The agent's fetch tool apparently uses different headers or routing that bypasses the curl-level block.
+- **HTTP 418** (I'm a teapot) from the IEEE stamp PDF endpoint is a deliberate bot-deflection signal.
+- **HTTP 406** from eLife and **HTTP 410** from CORE reader indicate content-negotiation failure and a removed page, respectively.
+
 ## Headline Findings
 
 ### Strong targets for agent-readable hosting
